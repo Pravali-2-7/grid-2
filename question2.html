@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly Schedule</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: navy;
+            margin-bottom: 20px;
+        }
+
+        .schedule {
+            width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 100px repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .time {
+            background-color: lightcyan;
+            padding: 12px;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        .day {
+            padding: 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            background-color: pink;
+        }
+
+        .pink-box {
+            background-color: pink;
+            height: 45px;
+            border-radius: 15px;
+            padding-top: 10px;
+        }
+
+        .yellow-box {
+            background-color: lightgoldenrodyellow;
+            height: 45px;
+            border-radius: 15px;
+            padding-top: 10px;
+        }
+
+        .blue-box {
+            background-color: lavender;
+            height: 45px;
+            border-radius: 15px;
+            padding-top: 10px;
+        }
+
+        .note {
+            grid-column: span 6;
+            background-color: lightcyan;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Weekly Schedule</h1>
+    <div class="schedule">
+        <div></div>
+        <div class="day">Monday</div>
+        <div class="day" style="background-color: lightgoldenrodyellow;">Tuesday</div>
+        <div class="day" style="background-color: lavender;">Wednesday</div>
+        <div class="day" style="background-color: lightgoldenrodyellow;">Thursday</div>
+        <div class="day" style="background-color: pink;">Friday</div>
+        
+        <div class="time">08:00</div>
+        <div class="pink-box">Math</div>
+        <div class="yellow-box">English</div>
+        <div class="blue-box">Science</div>
+        <div class="yellow-box">Math</div>
+        <div class="pink-box">Drawing</div>
+
+        <div class="time">09:00</div>
+        <div class="pink-box">English</div>
+        <div class="yellow-box">Science</div>
+        <div class="blue-box">Math</div>
+        <div class="yellow-box">PT</div>
+        <div class="pink-box">English</div>
+
+        <div class="time">10:00</div>
+        <div class="pink-box">EVS</div>
+        <div class="yellow-box">Math</div>
+        <div class="blue-box">PT</div>
+        <div class="yellow-box">Science</div>
+        <div class="pink-box">EVS</div>
+
+        <div class="time">11:00</div>
+        <div class="pink-box">Break</div>
+        <div class="yellow-box">Break</div>
+        <div class="blue-box">Break</div>
+        <div class="yellow-box">Break</div>
+        <div class="pink-box">Break</div>
+
+        <div class="time">12:00</div>
+        <div class="pink-box">Science</div>
+        <div class="yellow-box">EVS</div>
+        <div class="blue-box">English</div>
+        <div class="yellow-box">Math</div>
+        <div class="pink-box">Science</div>
+
+        <div class="time">13:00</div>
+        <div class="pink-box">Computer</div>
+        <div class="yellow-box">PT</div>
+        <div class="blue-box">Art</div>
+        <div class="yellow-box">Science</div>
+        <div class="pink-box">Music</div>
+
+        <div class="time">14:00</div>
+        <div class="pink-box">Reading</div>
+        <div class="yellow-box">Computer</div>
+        <div class="blue-box">EVS</div>
+        <div class="yellow-box">Drawing</div>
+        <div class="pink-box">English</div>
+
+        <div class="time">15:00</div>
+        <div class="pink-box">PT</div>
+        <div class="yellow-box">Math</div>
+        <div class="blue-box">Science</div>
+        <div class="yellow-box">Reading</div>
+        <div class="pink-box">PT</div>
+
+        <div class="time">16:00</div>
+        <div class="pink-box">Homework</div>
+        <div class="yellow-box">Homework</div>
+        <div class="blue-box">Homework</div>
+        <div class="yellow-box">Homework</div>
+        <div class="pink-box">Homework</div>
+
+        <div class="note">Note:</div>
+    </div>
+</body>
+</html>
