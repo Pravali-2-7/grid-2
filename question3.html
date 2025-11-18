@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            background-color: whitesmoke;
+        }
+     
+        h1 {
+            font-size: 2.5em;
+            color: teal;
+            margin-bottom: 20px;
+        }
+
+        .calculator {
+            width: 300px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .display {
+            height: 60px;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: right;
+            padding: 10px;
+            font-size: 32px;
+        }
+
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 10px; 
+        }
+
+        button {
+            height: 60px;
+            border: none;
+            border-radius: 8px;
+            font-size: 19px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .number {
+            background-color: white;
+            border: 1px solid lightgray;
+        }
+
+        .operator, .equal {
+            background-color: black;
+            color: white;
+            border: none; 
+        }
+
+        .clear {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+
+    <div class="calculator">
+        <div class="display"></div>
+
+        <div class="buttons-grid">
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator plus">+</button>
+
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator minus">-</button>
+
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator multiply">x</button>
+
+            <button class="clear">C</button>
+            <button class="number zero">0</button>
+            <button class="equal">=</button>
+            <button class="operator divide">/</button>
+        </div>
+    </div>
+</body>
+</html>
